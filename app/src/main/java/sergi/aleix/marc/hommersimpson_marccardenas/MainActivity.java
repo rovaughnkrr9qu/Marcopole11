@@ -3,10 +3,12 @@ package sergi.aleix.marc.hommersimpson_marccardenas;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
     AnimationDrawable titolSimpsons;
+    ImageView Hide1, Hide2, Hide3, Hide4, Hide5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,12 +17,37 @@ public class MainActivity extends AppCompatActivity {
         ImageView titolAnim =(ImageView)findViewById(R.id.simpsonsAnim);
         titolAnim.setBackgroundResource(R.drawable.simpsons_anim);
         titolSimpsons = (AnimationDrawable) titolAnim.getBackground();
+        Hide1 = (ImageView)findViewById(R.id.verdView);
+        Hide2 = (ImageView)findViewById(R.id.blauView);
+        Hide3 = (ImageView)findViewById(R.id.vermellView);
+        Hide4 = (ImageView)findViewById(R.id.ullView);
+        Hide5 = (ImageView)findViewById(R.id.donutView);
+        Hide1.setVisibility(View.INVISIBLE);
+        Hide2.setVisibility(View.INVISIBLE);
+        Hide3.setVisibility(View.INVISIBLE);
+        Hide4.setVisibility(View.INVISIBLE);
+        Hide5.setVisibility(View.INVISIBLE);
     }
 
     @Override
     public void onWindowFocusChanged(boolean focus) {
         super.onWindowFocusChanged(focus);
         titolSimpsons.start();
+    }
+    public void revelarVerdad(View view){
+        if(Hide1.getVisibility() == View.VISIBLE){
+            Hide1.setVisibility(View.INVISIBLE);
+            Hide2.setVisibility(View.INVISIBLE);
+            Hide3.setVisibility(View.INVISIBLE);
+            Hide4.setVisibility(View.INVISIBLE);
+            Hide5.setVisibility(View.INVISIBLE);
+        } else {
+            Hide1.setVisibility(View.VISIBLE);
+            Hide2.setVisibility(View.VISIBLE);
+            Hide3.setVisibility(View.VISIBLE);
+            Hide4.setVisibility(View.VISIBLE);
+            Hide5.setVisibility(View.VISIBLE);
+        }
     }
 }
 

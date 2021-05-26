@@ -15,12 +15,13 @@
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
         android:layout_marginBottom="192dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        android:onClick="revelarVerdad"
+        app:layout_constraintBottom_toBottomOf="@+id/homerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/homerView"
         android:layout_width="186dp"
         android:layout_height="268dp"
         android:layout_marginStart="140dp"
@@ -29,5 +30,60 @@
         app:layout_constraintStart_toStartOf="@+id/simpsonsAnim"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/homer_simpson" />
+
+    <ImageView
+        android:id="@+id/vermellView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/homerView"
+        app:layout_constraintTop_toTopOf="@+id/homerView"
+        app:srcCompat="@drawable/engranatge_vermell" />
+
+    <ImageView
+        android:id="@+id/verdView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="57dp"
+        app:layout_constraintStart_toStartOf="@+id/homerView"
+        app:layout_constraintTop_toTopOf="@+id/homerView"
+        app:srcCompat="@drawable/engranatge_verd" />
+
+    <ImageView
+        android:id="@+id/blauView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="61dp"
+        app:layout_constraintStart_toStartOf="@+id/homerView"
+        app:layout_constraintTop_toTopOf="@+id/homerView"
+        app:srcCompat="@drawable/engranatge_blau" />
+
+    <ImageView
+        android:id="@+id/ullView"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="102dp"
+        app:layout_constraintStart_toStartOf="@+id/homerView"
+        app:layout_constraintTop_toTopOf="@+id/homerView"
+        app:srcCompat="@drawable/ull" />
+
+    <ImageView
+        android:id="@+id/donutView"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/simpsonsAnim"
+        app:layout_constraintTop_toBottomOf="@+id/simpsonsAnim"
+        app:srcCompat="@drawable/donut" />
 
 </android.support.constraint.ConstraintLayout>
