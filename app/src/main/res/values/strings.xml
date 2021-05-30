@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">HommerSimpson_MarcCardenas</string>
+
+    <!-- DESCRIPCIONS -->
+    <string name="descr_titol">Títol de la série animat</string>
+    <string name="descr_donut">Imatge de un donut</string>
+    <string name="descr_gear_1">Engranatge de color vermell</string>
+    <string name="descr_gear_2">Engranatge de color verd</string>
+    <string name="descr_gear_3">Engranatge de color blau</string>
+    <string name="descr_ull">Un ull que observa atentament</string>
+    <string name="descr_base_image">Imatge base amb la silueta de Homer Simpson</string>
 </resources>

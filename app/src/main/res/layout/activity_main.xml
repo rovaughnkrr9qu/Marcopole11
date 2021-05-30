@@ -18,7 +18,8 @@
         android:onClick="revelarVerdad"
         app:layout_constraintBottom_toBottomOf="@+id/homerView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/descr_titol" />
 
     <ImageView
         android:id="@+id/homerView"
@@ -29,7 +30,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/simpsonsAnim"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/homer_simpson" />
+        app:srcCompat="@drawable/homer_simpson"
+        android:contentDescription="@string/descr_base_image"/>
 
     <ImageView
         android:id="@+id/vermellView"
@@ -40,7 +42,8 @@
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="@+id/homerView"
         app:layout_constraintTop_toTopOf="@+id/homerView"
-        app:srcCompat="@drawable/engranatge_vermell" />
+        app:srcCompat="@drawable/engranatge_vermell"
+        android:contentDescription="@string/descr_gear_1"/>
 
     <ImageView
         android:id="@+id/verdView"
@@ -51,7 +54,8 @@
         android:layout_marginTop="57dp"
         app:layout_constraintStart_toStartOf="@+id/homerView"
         app:layout_constraintTop_toTopOf="@+id/homerView"
-        app:srcCompat="@drawable/engranatge_verd" />
+        app:srcCompat="@drawable/engranatge_verd"
+        android:contentDescription="@string/descr_gear_2"/>
 
     <ImageView
         android:id="@+id/blauView"
@@ -62,7 +66,8 @@
         android:layout_marginTop="61dp"
         app:layout_constraintStart_toStartOf="@+id/homerView"
         app:layout_constraintTop_toTopOf="@+id/homerView"
-        app:srcCompat="@drawable/engranatge_blau" />
+        app:srcCompat="@drawable/engranatge_blau"
+        android:contentDescription="@string/descr_gear_3"/>
 
     <ImageView
         android:id="@+id/ullView"
@@ -73,7 +78,8 @@
         android:layout_marginTop="102dp"
         app:layout_constraintStart_toStartOf="@+id/homerView"
         app:layout_constraintTop_toTopOf="@+id/homerView"
-        app:srcCompat="@drawable/ull" />
+        app:srcCompat="@drawable/ull"
+        android:contentDescription="@string/descr_ull"/>
 
     <ImageView
         android:id="@+id/donutView"
@@ -84,6 +90,7 @@
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="@+id/simpsonsAnim"
         app:layout_constraintTop_toBottomOf="@+id/simpsonsAnim"
-        app:srcCompat="@drawable/donut" />
+        app:srcCompat="@drawable/donut"
+        android:contentDescription="@string/descr_donut"/>
 
 </android.support.constraint.ConstraintLayout>
