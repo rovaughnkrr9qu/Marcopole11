@@ -88,9 +88,10 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/descr_donut"
+        android:onClick="sonarMusic"
         app:layout_constraintStart_toStartOf="@+id/simpsonsAnim"
         app:layout_constraintTop_toBottomOf="@+id/simpsonsAnim"
-        app:srcCompat="@drawable/donut"
-        android:contentDescription="@string/descr_donut"/>
+        app:srcCompat="@drawable/donut" />
 
 </android.support.constraint.ConstraintLayout>
