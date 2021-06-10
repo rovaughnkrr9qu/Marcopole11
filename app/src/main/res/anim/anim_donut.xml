@@ -14,7 +14,7 @@
         android:interpolator = "@android:anim/accelerate_decelerate_interpolator"
         android:repeatMode="reverse"
         android:fromYDelta="0%p"
-        android:toYDelta="50%p"
+        android:toYDelta="14%p"
         android:duration="5000"
         android:repeatCount="-1"
         />
