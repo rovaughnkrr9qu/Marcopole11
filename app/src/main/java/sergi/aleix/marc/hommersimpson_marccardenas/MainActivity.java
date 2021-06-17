@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             Hide3.clearAnimation();
             Hide4.clearAnimation();
             Hide5.clearAnimation();
-
+            audio.pause();
         } else {
             Hide1.setVisibility(View.VISIBLE);
             Hide2.setVisibility(View.VISIBLE);
